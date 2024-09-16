@@ -4,7 +4,7 @@ import Banner from "./Banner.astro"
 
 <div x-data="{ showmenu: false }" class=" fixed w-full" >
   <div id="navbar" class="justify-between lg:justify-around items-center">
-<nav id="desktopmenu" class=" hidden lg:block items-center bg-black text-white p-4 border-t">
+<nav id="desktopmenu" class=" hidden lg:block items-center bg-black text-white p-0 border-t border-b">
     <div class="container mx-auto">
       <ul class="flex flex-row items-center">
         <li class="relative flex-1 text-center">
@@ -30,9 +30,9 @@ import Banner from "./Banner.astro"
 </svg>
 </button>
 
-  <nav id="mobilmenu" class="flex flex-col content-center pt-4 z-40" 
+  <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-<ul class="text-white" >
+<ul class="text-white z-20" >
 <li class="text-center py-2 border-y-2"><s>FORSIDE</s></li>
 <li class="text-center py-2 border-b-2">INFO</li>
 <li class="text-center py-2 border-b-2">HOW TO</li>
@@ -42,4 +42,3 @@ x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside=
 </nav>
 </div>
 
-<Banner text="DIGITAL SKRALDEDAG" text="DIGITAL SKRALDEDAG"></Banner>
