@@ -8,19 +8,21 @@ import thumbsup from "../assets/images/thumbsup.png";
 import Banner from "../components/Banner.astro";
 ---
 <MainLayout title="Titel">
-	<article>
-<Banner text="DIGITAL SKRALDEDAG" text="DIGITAL SKRALDEDAG"></Banner>
-	</article>
-<article> 
-    <div class="grid grid-cols-2 border-white border-b">
+<article class=""> 
+	<Banner text="DIGITAL SKRALDEDAG" text="DIGITAL SKRALDEDAG"></Banner>
+    <div class="grid grid-cols-2 border-white border-b h-screen">
 		<div class="border-white border-r grid grid-rows-3">
 			<h1 class="text-customColor flex self-center place-content-center object-cover">D. 15 Marts 2025</h1>
-			<h2 class="text-white text-center ">En dag dedikeret til at rydde op i vores digitale skrald</h2>
+			<h2 class="text-white text-center pl-10 pr-10 ">En dag dedikeret til at rydde op i vores digitale skrald</h2>
 		<p class="text-white">Knap</p>
 		</div>
-		<div class="object-contain">
-		<Image class="w-full h-full p-4" src={Bitcoin} alt="Musik som levevej" />
+		<div class="object-cover">
+		<Image class="h-screen w-full p-4" src={Bitcoin} alt="Musik som levevej" />
 		</div>
 	</div>
  </article>
+
+ <section>
+	<Banner text="INFO INFO INFO" text="INFO INFO INFO"></Banner>
+ </section>
 </MainLayout>
