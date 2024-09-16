@@ -2,7 +2,7 @@
 import Banner from "./Banner.astro"
 ---
 
-<div x-data="{ showmenu: false }" class=" fixed w-full" >
+<div x-data="{ showmenu: false }" class=" fixed w-full z-50" >
   <div id="navbar" class="justify-between lg:justify-around items-center">
 <nav id="desktopmenu" class=" hidden lg:block items-center bg-black text-white p-0 border-t border-b">
     <div class="container mx-auto">
@@ -25,14 +25,14 @@ import Banner from "./Banner.astro"
       </ul>
     </div>
   </nav>
-  <button id="burgermenu" class="lg:hidden text-white self-center pt-3 pl-3 " x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <button id="burgermenu" class="lg:hidden text-white self-center pt-3 pl-3 z-50" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 </button>
 
-  <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+<nav id="mobilmenu" class="flex flex-col content-center pt-4" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-<ul class="text-white z-20" >
+<ul class="text-white" >
 <li class="text-center py-2 border-y-2"><s>FORSIDE</s></li>
 <li class="text-center py-2 border-b-2">INFO</li>
 <li class="text-center py-2 border-b-2">HOW TO</li>

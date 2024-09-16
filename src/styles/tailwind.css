@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+:root {
+  --global-color: #b2f100;
+}
 
+h1 {
+  color: var(--global-color);
+  font-size: 6rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
