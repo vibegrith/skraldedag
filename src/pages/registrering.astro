@@ -1,0 +1,81 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import Banner from "../components/Banner.astro"
+import { Image } from 'astro:assets';
+import registrering from "../assets/images/registrering.svg"
+---
+
+<MainLayout>
+<Banner text="REGISTRERING REGISTRERING REGISTRERING"></Banner>
+
+<section class="grid lg:grid-cols-5">
+
+    <div class="lg:col-span-2 border-r border-[var(--secondary-color-100)]">
+        <Image src={registrering} alt="billede"></Image>
+        <div class="flex flex-row border-t border-b border-[var(--secondary-color-100)]">
+            <Button variant="primary" size="large">Gem<br>datoen</Button>
+            <Button variant="secondary" size="large">Del<br>med<br>en ven</Button>
+        </div>
+    </div>
+
+    <div class="lg:col-span-3 border-b border-[var(--secondary-color-100)]">
+        <div class="bg-red-600 text-cyan-200 w-6">
+           <p>?</p>
+        </div>
+        <form action="" class="lg:grid grid-cols-2 sm:max-w-full gap-6 m-8">
+
+            <div class="block">
+                <label for="fornavn"></label>
+                <input type="text" id="fornavn" placeholder="Fornavn" class="mt-6 bg-transparent block w-full h-full border-b border-[var(--secondary-color-100)]">
+            </div>
+
+            <div class="block">
+                <label for="efternavn"></label>
+                <input type="text" id="efternavn" placeholder="Efternavn" class="mt-6 bg-transparent block w-full h-full border-b border-[var(--secondary-color-100)]">
+            </div>
+
+            <div class="block">
+                <label for="mail"></label>
+                <input type="mail" id="mail" placeholder="E-mail" class="mt-6 bg-transparent block w-full h-full border-solid border-1 border-b border-[var(--secondary-color-100)]">
+            </div>
+
+            <div class="block">
+                <label for="by"></label>
+                <input type="text" id="by" placeholder="By" class="mt-6 bg-transparent block w-full h-full border-solid border-1 border-b border-[var(--secondary-color-100)]">
+            </div>
+            
+            <div class="block col-span-2">
+                <label for="organisation"></label>
+                <input type="text" id="organisation" placeholder="Organisationsnavn" class="mt-6 bg-transparent block w-full h-full border-solid border-1 border-b border-[var(--secondary-color-100)]">
+            </div>
+
+            <div class="block">
+                <label for="deltagere"></label>
+                <input type="number" id="deltagere" placeholder="Antal deltagere" class="mt-6 w-full h-full bg-transparent block">
+            </div>
+
+            <div class="block">
+                <label for="data"></label>
+                <input type="number" id="data" placeholder="Antal GB slettet" class="mt-6 w-full h-full bg-transparent block ">
+            </div>
+
+            <div></div>
+           <Button variant="main">Indsend</Button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+</MainLayout>
+
+<style>
+input[type="text"]::placeholder, input[type="mail"]::placeholder, input[type="number"]::placeholder {
+    color: var(--secondary-color-100)
+}
+
+</style>
