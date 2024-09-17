@@ -14,49 +14,54 @@ import registrering from "../assets/images/registrering.svg"
 
     <div class="lg:col-span-2 border-r border-[var(--secondary-color-100)]">
         <Image src={registrering} alt="billede"></Image>
-        <div class="flex flex-row ">
+        <div class="flex flex-row border-t border-b border-[var(--secondary-color-100)]">
             <Button variant="primary" size="large">Gem<br>datoen</Button>
             <Button variant="secondary" size="large">Del<br>med<br>en ven</Button>
         </div>
     </div>
 
-    <div class="lg:col-span-3">
-        <form action="" class="lg:grid grid-cols-2 sm:max-w-full gap-6 mt-8">
+    <div class="lg:col-span-3 border-b border-[var(--secondary-color-100)]">
+        <div class="bg-red-600 text-cyan-200 w-6">
+           <p>?</p>
+        </div>
+        <form action="" class="lg:grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
             <div class="block">
                 <label for="fornavn"></label>
-                <input type="text" id="fornavn" placeholder="Fornavn" class="mt-1 bg-transparent block w-200px border-solid border-1 border-b border-[var(--secondary-color-100)]">
+                <input type="text" id="fornavn" placeholder="Fornavn" class="mt-6 bg-transparent block w-full h-full border-b border-[var(--secondary-color-100)]">
             </div>
 
             <div class="block">
                 <label for="efternavn"></label>
-                <input type="text" id="efternavn" placeholder="Efternavn" class="mt-1 bg-transparent block w-200px border-solid border-1 border-b border-[var(--secondary-color-100)]">
+                <input type="text" id="efternavn" placeholder="Efternavn" class="mt-6 bg-transparent block w-full h-full border-b border-[var(--secondary-color-100)]">
             </div>
 
             <div class="block">
                 <label for="mail"></label>
-                <input type="mail" id="mail" placeholder="E-mail" class="mt-1 bg-transparent block w-200px border-solid border-1 border-b border-[var(--secondary-color-100)]">
+                <input type="mail" id="mail" placeholder="E-mail" class="mt-6 bg-transparent block w-full h-full border-solid border-1 border-b border-[var(--secondary-color-100)]">
             </div>
 
             <div class="block">
                 <label for="by"></label>
-                <input type="text" id="by" placeholder="By" class="mt-1 bg-transparent block w-200px border-solid border-1 border-b border-[var(--secondary-color-100)]">
+                <input type="text" id="by" placeholder="By" class="mt-6 bg-transparent block w-full h-full border-solid border-1 border-b border-[var(--secondary-color-100)]">
             </div>
             
             <div class="block col-span-2">
                 <label for="organisation"></label>
-                <input type="text" id="organisation" placeholder="Organisationsnavn" class="mt-1 bg-transparent block border-solid border-1 border-b border-[var(--secondary-color-100)]">
+                <input type="text" id="organisation" placeholder="Organisationsnavn" class="mt-6 bg-transparent block w-full h-full border-solid border-1 border-b border-[var(--secondary-color-100)]">
             </div>
 
             <div class="block">
                 <label for="deltagere"></label>
-                <input type="number" id="deltagere" placeholder="Antal deltagere" class="mt-1 w-200px bg-transparent block">
+                <input type="number" id="deltagere" placeholder="Antal deltagere" class="mt-6 w-full h-full bg-transparent block">
             </div>
 
             <div class="block">
-                <label for="data">Antal GB slettet</label>
-                <input type="number" id="data" placeholder="Antal GB slettet" class="mt-1 w-200px bg-transparent block ">
+                <label for="data"></label>
+                <input type="number" id="data" placeholder="Antal GB slettet" class="mt-6 w-full h-full bg-transparent block ">
+            </div>
 
+            <div></div>
            <Button variant="main">Indsend</Button>
 
         </form>
