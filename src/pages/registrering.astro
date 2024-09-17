@@ -3,10 +3,58 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import Banner from "../components/Banner.astro"
+import { Image } from 'astro:assets';
+import registrering from "../assets/images/registrering.svg"
 ---
 
 <MainLayout>
 <Banner text="REGISTRERING REGISTRERING REGISTRERING"></Banner>
+
+<section class="grid grid-cols-5">
+
+    <div class="col-span-2 border-r border-[var(--secondary-color-100)]">
+        <Image src={registrering} alt="billede"></Image>
+        <div class="flex flex-row ">
+            <Button variant="primary" size="large">Gem<br>datoen</Button>
+            <Button variant="secondary" size="large">Del<br>med<br>en ven</Button>
+        </div>
+    </div>
+
+    <div class="col-span-3">
+        <form action="" class="sm:max-w-full gap-6 mt-8 lg:w-1/3 space-y-6">
+
+            <div class="block">
+                <label for="fornavn"></label>
+                <input type="text" id="fornavn" placeholder="Fornavn" class="mt-1 block w-full border-solid border-b border-white">
+            </div>
+
+            <div class="block">
+                <label for="efternavn"></label>
+                <input type="text" id="efternavn" placeholder="Efternavn" class="mt-1 block w-full border-solid border-b border-white">
+            </div>
+
+            <div class="block">
+                <label for="mail"></label>
+                <input type="mail" id="mail" placeholder="E-mail" class="mt-1 block w-full border-solid border-b border-white">
+            </div>
+
+            <div class="block">
+                <label for="by"></label>
+                <input type="text" id="by" placeholder="By" class="mt-1 block w-full border-solid border-b border-white">
+            </div>
+            
+            <div class="block">
+                <label for="organisation"></label>
+                <input type="text" id="organisation" placeholder="Organisationsnavn" class="mt-1 block w-full border-solid border-b border-white">
+            </div>
+
+           <Button variant="main">Indsend</Button>
+
+        </form>
+
+    </div>
+
+</section>
 
 
 </MainLayout>
