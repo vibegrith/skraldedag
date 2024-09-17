@@ -13,8 +13,8 @@ import registrering from "../assets/images/registrering.svg"
 <section class="grid lg:grid-cols-5">
 
     <div class="lg:col-span-2 border-r border-[var(--secondary-color-100)]">
-        <Image src={registrering} alt="billede"></Image>
-        <div class="flex flex-row border-t border-b border-[var(--secondary-color-100)]">
+        <Image class="hidden md:block" src={registrering} alt="billede"></Image>
+        <div class="hidden md:block flex flex-row border-t border-b border-[var(--secondary-color-100)]">
             <Button variant="primary" size="large">Gem<br>datoen</Button>
             <Button variant="secondary" size="large">Del<br>med<br>en ven</Button>
         </div>
@@ -27,45 +27,48 @@ import registrering from "../assets/images/registrering.svg"
         <form action="" class="lg:grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
             <div class="block">
-                <label for="fornavn"></label>
-                <input type="text" id="fornavn" placeholder="Fornavn" class="mt-6 bg-transparent block w-full "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="fornavn">fornavn</label>
+                <input type="text" id="fornavn" placeholder="Fornavn" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
             <div class="block">
-                <label for="efternavn"></label>
-                <input type="text" id="efternavn" placeholder="Efternavn" class="mt-6 bg-transparent block w-full"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="efternavn">efternavn</label>
+                <input type="text" id="efternavn" placeholder="Efternavn" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
             <div class="block">
-                <label for="mail"></label>
-                <input type="mail" id="mail" placeholder="E-mail" class="mt-6 bg-transparent block w-full "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="mail">E-mail</label>
+                <input type="mail" id="mail" placeholder="E-mail" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
             <div class="block">
-                <label for="by"></label>
-                <input type="text" id="by" placeholder="By" class="mt-6 bg-transparent block w-full "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="by">By</label>
+                <input type="text" id="by" placeholder="By" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
             
             <div class="block col-span-2">
-                <label for="organisation"></label>
-                <input type="text" id="organisation" placeholder="Organisationsnavn"class="mt-6 bg-transparent block w-full "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="organisation">organisationsnavn</label>
+                <input type="text" id="organisation" placeholder="Organisationsnavn"class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
             <div class="block">
-                <label for="deltagere"></label>
-                <input type="number" id="deltagere" placeholder="Antal deltagere" class="mt-6 bg-transparent block w-full "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="deltagere">antal deltagere</label>
+                <input type="number" id="deltagere" placeholder="Antal deltagere" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
             <div class="block">
-                <label for="data"></label>
-                <input type="number" id="data" placeholder="Antal GB slettet" class="mt-6 bg-transparent block w-full "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
+                <label hidden for="data">antal slettet data</label>
+                <input type="number" id="data" placeholder="Antal GB slettet" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
             <div></div>
             <Button variant="main">Indsend</Button>
         
         </form>
-        
+        <div class="block md:hidden flex flex-row border-t border-b border-[var(--secondary-color-100)]">
+            <Button variant="primary" size="large">Gem<br>datoen</Button>
+            <Button  variant="secondary" size="large">Del<br>med<br>en ven</Button>
+        </div>
 
     </div>
 
