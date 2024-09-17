@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .bg-customGreen {
+    background-color: #b2f100;
+  }
+
+  .text-customGreen {
+    color: #b2f100;
+  }
+
+  .bg-customGreen2 {
+    background-color: #8dbd06;
+  }
+
+  .text-customGreen2 {
+    color: #8dbd06;
+  }
+
+  .bg-customGreen3 {
+    background-color: #eaffec;
+  }
+
+  .text-customGreen3 {
+    color: #eaffec;
+  }
+}
+
 :root {
   --global-color: #b2f100;
 }
