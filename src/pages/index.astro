@@ -14,12 +14,14 @@ import Forside from "../assets/images/forside_2.svg";
 ---
 <MainLayout title="Titel">
 <article class="">
-  <Banner text="Digital Skraldkraldedag" text="Digital Skraldedag"></Banner>
+  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
     <div class="grid grid-cols-2 border-white border-b h-screen">
 		<div class="border-white border-r grid grid-rows-3">
 			<h1 class="text-customColor flex self-center place-content-center object-cover">D. 15 Marts 2025</h1>
-			<h2 class="text-white text-center pl-10 pr-10 ">En dag dedikeret til at rydde op i vores digitale skrald</h2>
-		<p class="text-white">Knap</p>
+			<h2 class="text-white text-center pl-10 pr-10 ">En dag dedikeret</h2>
+				<h5> til at rydde op i</h5>
+				<h2> vores digitale skrald</h2>
+		<div class="flex justify-center md:pt-10"> <Button variant="main" size="large">Deltag her</Button></div>
 		</div>
 		<div class="object-fill">
 		<Image class="h-screen w-full p-4" src={Forside} alt="Hånd med mobil" />
@@ -28,7 +30,7 @@ import Forside from "../assets/images/forside_2.svg";
  </article>
 <Image class="" src={Sustain} alt="Sustainable tekst"/>
  <section id="info">
-	<Banner text="Info Info Info"></Banner>
+	<Banner text="Info Info Info Info Info Info Info"></Banner>
  </section>
 
  <section class="grid grid-cols-2">
@@ -58,11 +60,10 @@ import Forside from "../assets/images/forside_2.svg";
 		    </div>
 	    </div>
 			
-			<div class="md: flex md: justify-center">
+		<div class="md: flex md: justify-center">
 			<Image src={Computer} alt="email og pære"/></div>
 		</div>
-
-		<div class="grid grid-cols-2 border-white border-b">
+		 <div class="grid grid-cols-2 border-white border-b">
 			<div class="md:p-10 md: flex md: justify-center">
 			<Image src={Kabel} alt="kabel"/></div>
 			<div class="bg-[var(--secondary-color-200)] md:p-6 text-right content-center">
@@ -70,22 +71,24 @@ import Forside from "../assets/images/forside_2.svg";
 		<h1 class="text-[var(--accent-color-100)]">900</h1>
 	    <p class="text-[var(--primary-color-300)]"><b><i>millioner tons CO2 hvert år!</i></b></p></div>
 		</div> 
+		
 
 		<div class="border-white border-b">
 			<h2 class="md:p-6 md:text-center">
 				Registrer dit bidrag
 			</h2>
-			<div class="md:p-10">
-			<p class="md:pb-6">Den 15. marts 2025, er dagen hvor du kan være med til at reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
-            <li class="text-white">1.184.747 deltagere</li>
-            <li class="text-white"> 14.5 M GB slettet</li>
-            <li class="text-white">3.625 tons CO2 udledning forhindret - årligt</li> </div>
-			</div>
 
-		<div class="grid grid-cols-2 md:p-6">
-				<div><h3 class="text-white text-center">Del med en ven</h3></div>
-				<div><h3 class="text-white text-center">Tilføj til kalender</h3></div>
-		</div>
+			<div class=" md:p-6">
+                <p class="md:pb-6">Den 15. marts 2025, er dagen hvor du kan være med til at reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
+                <li class="text-white">1.184.747 deltagere</li>
+                <li class="text-white"> 14.5 M GB slettet</li>
+                <li class="text-white">3.625 tons CO2 udledning forhindret - årligt</li> </div>
+                
+                      <div class="grid grid-cols-2 md:p-6">
+                        <Button variant="main" size="small">Del med en ven</Button>
+                        <Button variant="main" size="small">Tilføj til kalender</Button>
+                       </div>
+
 
 		</div>
 	</div>
@@ -124,8 +127,11 @@ import Forside from "../assets/images/forside_2.svg";
 	<p class="text-[var(--primary-color-100)]"> trillion spam emails  bliver sendt hvert år</p>
     <p class="text-[var(--primary-color-100)]"><b><i>Det udleder 20 millioner tons af CO2!</i></b></p></div>
 		</div>
-
+   <div class=" grid grid-cols-1 content-center">
+		<Button variant="round" size="small">Forsæt</Button>
+   </div>
 	</div>
+	
 
  </section>
 

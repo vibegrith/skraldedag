@@ -3,10 +3,14 @@ const {text} = Astro.props;
 ---
 
 
-<div class="overflow-hidden whitespace-nowrap bg-black border-white border-b">
-  <div class="inline-block animate-scroll">
-     <span class="mr-10 text-white text-6xl md:text-9xl text-center m-0">{text}</span>
-    <span class="mr-10 text-white text-6xl md:text-9xl text-center m-0">{text}</span>
+<div class="overflow-hidden whitespace-nowrap bg-black border-white border-b md:pb-4">
+  <div class="inline-block animate-scroll min-w-full">
+     <span class="mr-5 text-white text-6xl md:text-9xl text-center m-0">{text}</span>
+    
+  </div>
+    <div class="inline-block animate-scroll min-w-full">
+     <span class=" mr-5 text-white text-6xl md:text-9xl text-center m-0">{text}</span>
+    
   </div>
 </div>
 
