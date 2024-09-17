@@ -2,6 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  .bg-customGreen {
+    background-color: var(--accent-color-300);
+  }
 
+  .text-customGreen {
+    color: var(--accent-color-300);
+  }
+
+  .bg-customGreen2 {
+    background-color: var(--accent-color-200);
+  }
+
+  .text-customGreen2 {
+    color: var(--accent-color-200);
+  }
+
+  .bg-customGreen3 {
+    background-color: var(--secondray-color-300);
+  }
+
+  .text-customGreen3 {
+    color: var(--secondray-color-300);
+  }
+}
+
+:root {
+  --primary-color-100: #232b25;
+  --primary-color-200: #2e3830;
+  --primary-color-300: #323f36;
+  --primary-color-400: #37433a;
+  --primary-color-500: #3c483f;
+
+  --secondary-color-100: #fbfffc;
+  --secondary-color-200: #f4fff5;
+  --secondray-color-300: #eaffec;
+  --secondary-color-400: #ddf8df;
+  --secondary-color-500: #d6f1d8;
+
+  --accent-color-100: #78a103;
+  --accent-color-200: #8dbd06;
+  --accent-color-300: #b2f100;
+  --accent-color-400: #c4ff1c;
+  --accent-color-500: #daff71;
+}
+
+h1 {
+  color: var(--accent-color-300);
+  font-size: 6rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary-color-100);
+}
+
+p {
+  color: var(--secondary-color-100);
 }

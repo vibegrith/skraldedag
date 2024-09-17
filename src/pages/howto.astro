@@ -1,0 +1,98 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+---
+<MainLayout title="Titel">
+	
+
+	<!-- første del  -->
+		<section class=" grid md:grid-cols-2 bg-green-800 p-4 text-white ">	
+
+			<div class="text-4xl text-center p-8">
+				<div>
+					<h1 class=" border-b border-white-300 pb-4 ">Reducer dit <br>
+						klima-fodtryk <br>
+						i 4 små steps</h1>
+				</div>
+				
+				<div>
+					<img src="src/assets/images/step1.svg" alt="Registering" class="-mt-20 hidden md:block">
+				</div>
+				
+			</div>
+			
+			<div class="  grid content-center bg-gradient-to-r mt border-l-2 border-white-300 ">					
+				<div class="  p-8 grid content-center  border-b border-gray-300 pb-4 md:block">
+					
+					<h3 class=" text-2xl mb-4 ">Step 1</h3>
+
+					<p> Fjern alle de apps som du ikke har brugt i et stykke tid, eller kun har brugt enkelte gange. Vær ærlig og tapper! Slet alle de unødvendige, glemte, gamle apps og spil som du har downloadet, men ikke rigtig brugt. <br> <br>
+						De forbruger hundredvis af megabyte energi, selv når de ikke er i brug.
+					Husk at slette de kontoer (emails inkluderet) og tilhørende data, som du oprettede da du var 15 og har ikke brugt i et årti eller mere! Din mobil vil blive hurtigere og øge dets batterilevetid. <br> <br>
+
+					Kig dine billeder og videoer i gennem; ved at slette de overflødige, samt duplikationer, kan du befrie flere gigabytes af værdifuld lagringsplads. Se guidelines om flere måder at rydde din mobil og tablet op på.</p>		
+
+					<img src="src/assets/images/step1.svg" alt="Billede" class="block md:hidden">
+
+				</div>
+
+				
+				<div class=" p-8 grid content-center border-b border-white-300 pb-4">
+					<h3 class=" text-2xl mb-4"> Step 2</h3>
+
+				<p> Sortér din personlige computer ud og slet filer som er duplikationer, eller er blevet ubrugelige. Gå i gennem dine billeder; slet alle duplikationer og slørede billeder. Tjek dine videofiler og slet de som er set eller bare er unødvendige. 
+					Arkiver de vigtige filer. <br> <br>
+					 Vær forberedt på at finde nogle virkelige fantastiske ting på din computer! Se guidelines om flere måder at rydde din computer og harddrive op på.</p>
+			
+					 	<img src="src/assets/images/step2.svg" alt="Billede" class="block md:hidden">
+
+				</div>
+
+
+				<div class=" p-8 grid content-center border-b border-white-300 pb-4">
+					<h3 class=" text-2xl mb-4">Step 3</h3>
+
+				<p> Filtrér dine emails med de ældste først og arkiver dem. Afmeld de nyhedsbreve, som du alligevel ikke læser. Find de lange email-korrespondancer, vælg den første og slet resten! <br> <br>
+					Søg efter de gentagende navne, mail-adresser og nøgleord, så du kan finde de samme  slags mails og tage dig af dem med det samme. Vær modig og tryk på den slet knap. <br> <br>
+					Se guidelines om flere måder at rydde op i din mailbox. </p>
+
+						<img src="src/assets/images/step3.svg" alt="Billede" class="block md:hidden">
+			
+				</div>
+
+				<div class=" p-8 grid content-center border-b border-white-300 pb-4">
+					<h3 class=" text-2xl mb-4">Step 4</h3>
+
+				<p> I stedet for at sende mails, brug flere co-working steder. Hold op med at sende ‘ok’ og ‘tak’ mails! Behold de vigtige filer i ét enkelt cloud space, så der ikke er grund til at have de samme filer i alle computerne. Tænk før du sikkerhedskopiere. 
+					Lav mindre ‘fast content’ og vær bevidst om dine videoer og billeder. Vær sikker på du kun sikkerhedskopiere de filer som du virkelig har brug for og de billeder, som du elsker. <br> <br>
+					Små forandringer i dine internet vaner, såsom at have kameraet slået fra i virtuelle møder, reducere kvaliteten af streaming tjenester, formindske gaming-tiden, begrænse tiden på sociale meider og afmelde nyhedsbreve og mail-lister, kan væsenligt reducere dit  klima-fodtryk!. </p>
+			
+					<img src="src/assets/images/step4.svg" alt="Billede" class="block md:hidden">
+
+				</div>
+
+
+
+
+			</div>
+	
+
+</div>
+		</section>
+
+
+
+
+
+    	<article class="p-6 max-w-3xl mx-auto ">
+		<Button> Forsæt</Button>
+		<p class="mt-1 block w-full">Link til 
+            <Link href="https://www.kea.dk" target="_blank">Bog & ide</Link></p>
+	</article>
+
+
+</MainLayout>
+
