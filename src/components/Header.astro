@@ -8,19 +8,19 @@ import Banner from "./Banner.astro"
     <div class="container mx-auto">
       <ul class="flex flex-row items-center">
         <li class="relative flex-1 text-center">
-          <a href="/" class="block py-6 px-4 border-l  border-r border-white hover:underline"><s>FORSIDE</s></a>
+          <a href="/" class="block py-6 px-4 border-l  border-r border-white transition-all	 hover:line-through">FORSIDE</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="#info" class="block py-6 px-4 border-r border-white hover:underline">INFO</a>
+          <a href="#info" class="block py-6 px-4 border-r border-white transition-all	 hover:line-through">INFO</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="/howto" class="block py-6 px-4 border-r border-white hover:underline">HOW TO</a>
+          <a href="/howto" class="block py-6 px-4 border-r border-white transition-all	 hover:line-through">HOW TO</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="/resourcer" class="block py-6 px-4 border-r border-white hover:underline">RESSOURCER</a>
+          <a href="/resourcer" class="block py-6 px-4 border-r border-white transition-all 	 hover:line-through">RESSOURCER</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="/registrering" class="block py-6 px-4 border-r border-white hover:underline">REGISTRERING</a>
+          <a href="/registrering" class="block py-6 px-4 border-r border-white transition-all hover:line-through">REGISTRERING</a>
         </li>
       </ul>
     </div>
@@ -41,5 +41,4 @@ x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside=
 </ul>
 </nav>
 </div>
-
 
