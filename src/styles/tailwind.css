@@ -4,7 +4,7 @@
 
 @layer base {
   .bg-customGreen {
-    background-color: #b2f100;
+    background-color: var(--accent-color-300);
   }
 
   .text-customGreen {
@@ -30,6 +30,24 @@
 
 :root {
   --global-color: #b2f100;
+
+  --primary-color-100: #232b25;
+  --primary-color-200: #2e3830;
+  --primary-color-300: #323f36;
+  --primary-color-400: #37433a;
+  --primary-color-500: #3c483f;
+
+  --secondary-color-100: #fbfffc;
+  --secondary-color-200: #f4fff5;
+  --secondray-color-300: #eaffec;
+  --secondary-color-400: #ddf8df;
+  --secondary-color-500: #d6f1d8;
+
+  --accent-color-100: #78a103;
+  --accent-color-200: #8dbd06;
+  --accent-color-300: #b2f100;
+  --accent-color-400: #c4ff1c;
+  --accent-color-500: #daff71;
 }
 
 h1 {
