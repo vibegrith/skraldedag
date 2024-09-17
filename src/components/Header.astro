@@ -4,42 +4,41 @@ import Banner from "./Banner.astro"
 
 <div x-data="{ showmenu: false }" class=" fixed top-0 w-full z-50" >
   <div id="navbar" class="justify-between lg:justify-around items-center">
-<nav id="desktopmenu" class=" hidden lg:block items-center bg-black text-white p-0 border-t border-b">
+<nav id="desktopmenu" class=" hidden lg:block items-center background text-[var(--secondary-color-100)] p-0 border-t border-b">
     <div class="container mx-auto">
       <ul class="flex flex-row items-center">
         <li class="relative flex-1 text-center">
-          <a href="/" class="block py-6 px-4 border-l  border-r border-white hover:underline"><s>FORSIDE</s></a>
+          <a href="/" class="block py-6 px-4 border-l  border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">FORSIDE</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="#info" class="block py-6 px-4 border-r border-white hover:underline">INFO</a>
+          <a href="#info" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">INFO</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="/howto" class="block py-6 px-4 border-r border-white hover:underline">HOW TO</a>
+          <a href="/howto" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">HOW TO</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="/resourcer" class="block py-6 px-4 border-r border-white hover:underline">RESSOURCER</a>
+          <a href="/resourcer" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all 	 hover:line-through">RESSOURCER</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="/registering" class="block py-6 px-4 border-r border-white hover:underline">REGISTRERING</a>
+          <a href="/registrering" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all hover:line-through">REGISTRERING</a>
         </li>
       </ul>
     </div>
   </nav>
-  <button id="burgermenu" class="lg:hidden text-white self-center pt-3 pl-3 z-50" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <button id="burgermenu" class="lg:hidden text-[var(--secondary-color-100)] self-center pt-3 pl-3 z-50 " x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 </button>
 
 <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-<ul class="text-white" >
-<li class="text-center py-2 border-y-2"><s>FORSIDE</s></li>
-<li class="text-center py-2 border-b-2">INFO</li>
-<li class="text-center py-2 border-b-2">HOW TO</li>
-<li class="text-center py-2 border-b-2">RESSOURCER</li>
-<li class="text-center py-2 border-b-2">REGISTRERING</li>
+<ul class="text-[var(--secondary-color-100)]" >
+<li class="text-center py-2 border-y-2 background">FORSIDE</li>
+<li class="text-center py-2 border-b-2 background">INFO</li>
+<li class="text-center py-2 border-b-2 background">HOW TO</li>
+<li class="text-center py-2 border-b-2 background">RESSOURCER</li>
+<li class="text-center py-2 border-b-2 background">REGISTRERING</li>
 </ul>
 </nav>
 </div>
-
 
