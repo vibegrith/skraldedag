@@ -2,28 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  .bg-customGreen {
-    background-color: #b2f100;
-  }
+:root {
+  --global-color: #b2f100;
+}
 
-  .text-customGreen {
-    color: #b2f100;
-  }
+h1 {
+  color: var(--global-color);
+  font-size: 6rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-  .bg-customGreen2 {
-    background-color: #8dbd06;
-  }
+h2 {
+  font-size: 4rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
 
-  .text-customGreen2 {
-    color: #8dbd06;
-  }
-
-  .bg-customGreen3 {
-    background-color: #eaffec;
-  }
-
-  .text-customGreen3 {
-    color: #eaffec;
-  }
+p {
+  color: white;
 }
