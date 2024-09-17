@@ -104,3 +104,12 @@ li {
   font-style: italic;
   color: var(--secondary-color-100);
 }
+
+/* Footer */
+h4 {
+  font-size: 1.3rem;
+  font-family: "corporate-e", serif;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--secondary-color-100);
+}
