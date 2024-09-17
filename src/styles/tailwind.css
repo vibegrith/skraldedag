@@ -65,13 +65,42 @@ span {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "indivisible", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  font-style: bold;
+  color: var(--secondary-color-100);
+}
+
+/* h2. esktra  */
+h5 {
+  font-size: 3rem;
+  font-family: "corporate-e", serif;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--secondary-color-100);
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 200;
   font-style: normal;
   color: var(--secondary-color-100);
 }
 
 p {
+  font-size: 1rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: var(--secondary-color-100);
+}
+
+li {
+  font-size: 1rem;
+  font-family: "corporate-e", serif;
+  font-weight: 300;
+  font-style: italic;
   color: var(--secondary-color-100);
 }
