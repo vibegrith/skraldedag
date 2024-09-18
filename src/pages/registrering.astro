@@ -5,6 +5,7 @@ import Link from '../components/Link.astro';
 import Banner from "../components/Banner.astro"
 import { Image } from 'astro:assets';
 import registrering from "../assets/images/registrering.svg"
+import Checkbox from "../components/Checkbox.astro";
 ---
 
 <MainLayout>
@@ -15,8 +16,8 @@ import registrering from "../assets/images/registrering.svg"
     <div class="hidden md:block lg:col-span-2 border-r border-[var(--secondary-color-100)]">
         <Image class="hidden md:block" src={registrering} alt="billede"></Image>
         <div class=" grid grid-cols-2 border-t border-b border-[var(--secondary-color-100)]">
-            <Button variant="primary" size="large">Gem<br>datoen</Button>
-            <Button variant="secondary" size="large">Del<br>med<br>en ven</Button>
+            <Button variant="primary" size="xlarge">Gem<br>datoen</Button>
+            <Button variant="secondary" size="xlarge">Del<br>med<br>en ven</Button>
         </div>
     </div>
 
@@ -26,44 +27,56 @@ import registrering from "../assets/images/registrering.svg"
         </div>
         <form action="" class="grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
-            <div class="block">
+            <div class="block mb-6">
                 <label hidden for="fornavn">fornavn</label>
                 <input type="text" id="fornavn" placeholder="Fornavn" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
-            <div class="block">
+            <div class="block mb-6">
                 <label hidden for="efternavn">efternavn</label>
                 <input type="text" id="efternavn" placeholder="Efternavn" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
-            <div class="block">
+            <div class="block mb-6">
                 <label hidden for="mail">E-mail</label>
                 <input type="email" id="mail" placeholder="E-mail" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
-            <div class="block">
+            <div class="block mb-6">
                 <label hidden for="by">By</label>
                 <input type="text" id="by" placeholder="By" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
             
-            <div class="block col-span-2">
+            <div class="block col-span-2 mb-6">
                 <label hidden for="organisation">organisationsnavn</label>
                 <input type="text" id="organisation" placeholder="Organisationsnavn"class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
-            <div class="block">
+            <div class="block mb-6">
                 <label hidden for="deltagere">antal deltagere</label>
                 <input type="number" id="deltagere" placeholder="Antal deltagere" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none"  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
-            <div class="block">
+            <div class="block mb-6">
                 <label hidden for="data">antal slettet data</label>
                 <input type="number" id="data" placeholder="Antal GB slettet" class="mt-6 bg-transparent block w-full hover:bg-gradient-to-t from-[var(--accent-color-100)] to-transparent focus:bg-none "  style="border: none; border-bottom: 1px solid var(--secondary-color-100);">
             </div>
         
+            <div class="col-span-2">
+                <div class="flex flex-row">
+                    <Checkbox></Checkbox>
+                    <p>*Jeg accepterer Let's Do It, World Terms and Conditions</p>
+                </div>
+                <div class="flex flex-row">
+                    <Checkbox></Checkbox>
+                    <p>Jeg vil gerne modtage nyheder fra Digital Skraldedag</p>
+                </div>
+            </div>
             <div></div>
-            <Button variant="main">Indsend</Button>
+            <Button  variant="main">Indsend</Button>
+            
         
+
         </form>
         <div class="block md:hidden flex flex-row border-t border-b border-[var(--secondary-color-100)]">
             <Button variant="primary" size="large">Gem<br>datoen</Button>
