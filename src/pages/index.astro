@@ -14,16 +14,18 @@ import Forside from "../assets/images/forside_2.svg";
 ---
 <MainLayout title="Titel">
 <article class="">
-  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
-    <div class="grid grid-cols-2 border-white border-b h-screen">
-		<div class="border-white border-r grid grid-rows-3">
-			<h1 class="text-customColor flex self-center place-content-center object-cover">D. 15 Marts 2025</h1>
-			<h2 class="text-white text-center pl-10 pr-10 ">En dag dedikeret</h2>
-				<h5> til at rydde op i</h5>
-				<h2> vores digitale skrald</h2>
-		<div class="flex justify-center md:pt-10"> <Button variant="main" size="large">Deltag her</Button></div>
+	<div class="border-white border-t lg:border-t-0">
+  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner></div>
+    <div class="grid md:grid-cols-2 border-white border-b h-screen">
+		<div class="self-center place-content-center">
+			<h1 class=" py-4 lg:text-8xl text-customColor flex object-cover place-content-center text-center">D. 15 Marts 2025</h1>
+			<h2 class="text-white text-center md:pl-10 md:pr-10 ">En dag dedikeret</h2>
+				<h5 class="text-center"> til at rydde op i</h5>
+				<h2 class="text-center"> vores digitale skrald</h2> 
+		<div class="flex justify-center pt-4 border-white border-b pb-6 md:pt-10"> <Button variant="main" size="large">Deltag her</Button></div>
+		
 		</div>
-		<div class="object-fill">
+		<div class="md:object-fill border-white md:border-l">
 		<Image class="h-screen w-full p-4" src={Forside} alt="Hånd med mobil" />
 		</div>
 	</div>
@@ -33,8 +35,8 @@ import Forside from "../assets/images/forside_2.svg";
 	<Banner text="Info Info Info Info Info Info Info"></Banner>
  </section>
 
- <section class="grid grid-cols-2">
-	<div class="border-white border-r">
+ <section class="md:grid md:grid-cols-2">
+	<div class="border-white md:border-r">
 	
 		<h2 class="border-white border-b md:p-10 md:text-center">Vidste du??</h2>
 
@@ -72,25 +74,6 @@ import Forside from "../assets/images/forside_2.svg";
 	    <p class="text-[var(--primary-color-300)]"><b><i>millioner tons CO2 hvert år!</i></b></p></div>
 		</div> 
 		
-
-		<div class="border-white border-b">
-			<h2 class="md:p-6 md:text-center">
-				Registrer dit bidrag
-			</h2>
-
-			<div class=" md:p-6">
-                <p class="md:pb-6">Den 15. marts 2025, er dagen hvor du kan være med til at reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
-                <li class="text-white">1.184.747 deltagere</li>
-                <li class="text-white"> 14.5 M GB slettet</li>
-                <li class="text-white">3.625 tons CO2 udledning forhindret - årligt</li> </div>
-                
-                      <div class="grid grid-cols-2 md:p-6">
-                        <Button variant="main" size="small">Del med en ven</Button>
-                        <Button variant="main" size="small">Tilføj til kalender</Button>
-                       </div>
-
-
-		</div>
 	</div>
 
 	
@@ -127,12 +110,38 @@ import Forside from "../assets/images/forside_2.svg";
 	<p class="text-[var(--primary-color-100)]"> trillion spam emails  bliver sendt hvert år</p>
     <p class="text-[var(--primary-color-100)]"><b><i>Det udleder 20 millioner tons af CO2!</i></b></p></div>
 		</div>
-   <div class=" grid grid-cols-1 content-center">
-		<Button variant="round" size="small">Forsæt</Button>
-   </div>
+  
 	</div>
 	
 
  </section>
+
+ <section class="md:grid md:grid-cols-2">
+
+	<div class="border-white border-b md:border-r">
+			<h2 class="md:p-6 md:text-center">
+				Registrer dit bidrag
+			</h2>
+
+			<div class=" md:p-6">
+                <p class="md:pb-6">Den 15. marts 2025, er dagen hvor du kan være med til at reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
+                <li class="text-white">1.184.747 deltagere</li>
+                <li class="text-white"> 14.5 M GB slettet</li>
+                <li class="text-white">3.625 tons CO2 udledning forhindret - årligt</li> </div>
+                
+                      <div class="grid grid-cols-2 md:p-6">
+                        <Button variant="main" size="small">Del med en ven</Button>
+                        <Button variant="main" size="small">Tilføj til kalender</Button>
+                       </div>
+
+
+		</div>
+
+	 <div class=" grid grid-cols-1 content-center border-white border-b">
+		<Button variant="round" size="small">Forsæt</Button>
+   </div>
+ </section>
+
+ 
 
 </MainLayout>
