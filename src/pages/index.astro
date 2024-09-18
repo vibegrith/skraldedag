@@ -41,16 +41,17 @@ import Forside from "../assets/images/forside_2.svg";
 
  <section class="md:grid md:grid-cols-2">
 	<div class="border-white md:border-r">
-	
-		<h2 class="border-white border-b md:p-10 text-center">Vidste du??</h2>
-
+	<div class="border-white border-b md:p-10">
+		<h2 class="" >Vidste du??</h2>
+		<p class="md:text-xl">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu på sit femte år og arrangeret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+</div>
         <div class="grid grid-cols-2 border-white border-b">
 			<div class="px-2 flex md: justify-center">
 			<Image src={Email} alt="email og pære"/></div>
 			<div class="bg-[var(--secondray-color-300)] py-2 pr-2 md:pt-4 md:pb-6 md:pr-6">
 				<h1 class="text-[var(--primary-color-500)] text-right">1</h1>
 			<p class="text-[var(--primary-color-500)] text-right md:text-xl"><b><i>E-mail</i></b> udleder, i gennnemsnit, 4g CO2</p>
-				<p class="text-[var(--primary-color-500)] text-right md:text-xl"><b><i></i>= kulstof-fodtrykket af en lyspære tændt i 6 minutter!</i></b></p>
+				<p class="text-[var(--primary-color-500)] text-right md:pl-2 md:text-xl"><b><i></i>= kulstof-fodtrykket af en lyspære tændt i 6 minutter!</i></b></p>
 		</div>
 		</div>
 
@@ -130,9 +131,12 @@ import Forside from "../assets/images/forside_2.svg";
 
 			<div class=" p-2 md:p-6">
                 <p class="md:pb-6 md:text-xl">Den 15. marts 2025, er dagen hvor du kan være med til at reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
-                <li class="text-white md:text-xl">1.184.747 deltagere</li>
-                <li class="text-white md:text-xl"> 14.5 M GB slettet</li>
-                <li class="text-white md:text-xl">3.625 tons CO2 udledning forhindret - årligt</li> </div>
+				<ul class="flex flex-row justify-center gap-4">
+                <li class="text-white md:text-xl border-white border md:p-2">1.184.747 deltagere</li>
+                <li class="text-white md:text-xl border-white border md:p-2"> 14.5 M GB slettet</li>
+                <li class="text-white md:text-xl border-white border md:p-2 ">3.625 tons CO2 udledning forhindret - årligt</li>
+			</ul>
+		 </div>
                 
                       <div class="grid grid-cols-2 md:p-6 pb-4">
 						<div class="flex justify-center">
@@ -143,10 +147,10 @@ import Forside from "../assets/images/forside_2.svg";
                        </div>
 		</div>
 
-	 <div class="content-center border-white border-b px-2 py-2 md:py-4">
+	 <div class="content-center border-white border-b px-2 py-2">
 		<div class="flex justify-center">
 		<Button variant="round" size="small"><h2 class="pb-2">Vil du</h2> <br><h5 class="pb-4"><i>være med til</i></h5> <br><h2>at rydde op?</h2></Button></div>
-   </div>
+
  </section>
 
  
