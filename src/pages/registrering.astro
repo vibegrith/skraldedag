@@ -12,9 +12,9 @@ import registrering from "../assets/images/registrering.svg"
 
 <section class="grid lg:grid-cols-5">
 
-    <div class="lg:col-span-2 border-r border-[var(--secondary-color-100)]">
+    <div class="hidden md:block lg:col-span-2 border-r border-[var(--secondary-color-100)]">
         <Image class="hidden md:block" src={registrering} alt="billede"></Image>
-        <div class="hidden md:block flex flex-row border-t border-b border-[var(--secondary-color-100)]">
+        <div class=" grid grid-cols-2 border-t border-b border-[var(--secondary-color-100)]">
             <Button variant="primary" size="large">Gem<br>datoen</Button>
             <Button variant="secondary" size="large">Del<br>med<br>en ven</Button>
         </div>
@@ -24,7 +24,7 @@ import registrering from "../assets/images/registrering.svg"
         <div class="bg-red-600 text-cyan-200 w-6">
            <p>?</p>
         </div>
-        <form action="" class="lg:grid grid-cols-2 sm:max-w-full gap-6 m-8">
+        <form action="" class="grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
             <div class="block">
                 <label hidden for="fornavn">fornavn</label>
