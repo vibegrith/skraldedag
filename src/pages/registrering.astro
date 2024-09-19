@@ -65,17 +65,20 @@ import InfoBox from "../components/InfoBox.astro"
             </div>
         
             <div class="col-span-2">
-                <div class="flex flex-row">
-                    <Checkbox></Checkbox>
-                    <p>*Jeg accepterer Let's Do It, World Terms and Conditions</p>
-                </div>
-                <div class="flex flex-row">
-                    <Checkbox></Checkbox>
-                    <p>Jeg vil gerne modtage nyheder fra Digital Skraldedag</p>
-                </div>
+              <div class="flex flex-row">
+                    <div class="flex flex-col">
+                    <div class="flex flex-row">
+                            <Checkbox></Checkbox>
+                            <p>*Jeg accepterer Let's Do It, World Terms and Conditions</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <Checkbox></Checkbox>
+                        <p>Jeg vil gerne modtage nyheder fra Digital Skraldedag</p>
+                    </div>
+                    </div>
+                    <div class="ml-auto"><Button variant="main">Indsend</Button></div>
+              </div>
             </div>
-            <div></div>
-            <Button  variant="main">Indsend</Button>
             
         
 
