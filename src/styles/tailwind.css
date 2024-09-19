@@ -144,3 +144,7 @@ h4 {
   font-style: italic;
   color: var(--secondary-color-100);
 }
+
+.button {
+  font-family: "corporate-e", serif;
+}
