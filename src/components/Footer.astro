@@ -4,10 +4,12 @@ import Link from '../components/Link.astro'
 
 <div class="py-8 max-w-screen-xl mx-auto text-[var(--secondary-color-100)]" >
     
-    <div class="grid grid-cols-4 justify-items-center pb-8">
+    <div class="justify-items-center pb-8 grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left w-full">
        
-        <section> <link rel="stylesheet" href="">
-            <p> Logo</p>   
+        <section class="hidden md:block"> <link rel="stylesheet" href="">
+          <a href="/" target="_blank">
+            <img src="src/assets/images/logo_4.svg" alt="TikTok" class="w-[200px] h-[156px] ml-[-20px]">
+        </a>
         </section>
 
              <section> 
@@ -27,40 +29,52 @@ import Link from '../components/Link.astro'
            
         </section>
 
-        <section>
-            <div class=" gap-5 md:grid grid-cols-6 justify-items-center pb-8"> 
-             
+        <div class="grid grid-cols-2 gap-4 md:block"> 
 
-                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fletsdoitworld" target="_blank">
-            <img src="src/assets/images/x.svg" alt="x" class="w-8 h-8 my-2">
-        </a>
-        
-        <a href="https://www.tiktok.com/@worldcleanupday.global" target="_blank">
-            <img src="src/assets/images/tiktok.svg" alt="TikTok" class="w-8 h-8 my-2">
-        </a>
-        
-        <a href="https://www.youtube.com/worldcleanupday" target="_blank">
-            <img src="src/assets/images/youtube.svg" alt="YouTube" class="w-8 h-8 my-2">
-        </a>
-        
-        <a href="https://www.linkedin.com/company/world-cleanup-day-official/" target="_blank">
-            <img src="src/assets/images/in_2.svg" alt="LinkedIn" class="w-8 h-8 my-2">
-        </a>
-        
-        <a href="https://www.facebook.com/worldcleanupday.global" target="_blank">
-            <img src="src/assets/images/facebook.svg" alt="Facebook" class="w-8 h-8 my-2">
-        </a>
+             <section class="ml-20 md:ml-0">
+                        <div class="  gap-5 md:grid grid-cols-6 justify-items-center pb-8"> 
+                        
 
-        <a href="https://www.instagram.com/worldcleanupday.global" target="_blank">
-            <img src="src/assets/images/insta.svg" alt="Facebook" class="w-8 h-8 my-3 ">
-        </a>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fletsdoitworld" target="_blank">
+                                <img src="src/assets/images/x.svg" alt="x" class="w-8 h-8 my-2">
+                            </a>
+                            
+                            <a href="https://www.tiktok.com/@worldcleanupday.global" target="_blank">
+                                <img src="src/assets/images/tiktok.svg" alt="TikTok" class="w-8 h-8 my-2">
+                            </a>
+                            
+                            <a href="https://www.youtube.com/worldcleanupday" target="_blank">
+                                <img src="src/assets/images/youtube.svg" alt="YouTube" class="w-8 h-8 my-2">
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/company/world-cleanup-day-official/" target="_blank">
+                                <img src="src/assets/images/in_2.svg" alt="LinkedIn" class="w-8 h-8 my-2">
+                            </a>
+                            
+                            <a href="https://www.facebook.com/worldcleanupday.global" target="_blank">
+                                <img src="src/assets/images/facebook.svg" alt="Facebook" class="w-8 h-8 my-2">
+                            </a>
 
-
-
+                            <a href="https://www.instagram.com/worldcleanupday.global" target="_blank">
+                                <img src="src/assets/images/insta.svg" alt="Facebook" class="w-8 h-8 my-3 ">
+                            </a>
             </div>
+       
+              </section>
+
+        <section> <link rel="stylesheet" href="">
+                <a href="/" target="_blank">
+                    <img src="src/assets/images/logo_4.svg" alt="TikTok" class=" block md:hidden w-[200px] h-[156px] ml-[-20px]">
+             </a>
         </section>
 
 
+
+        </div>
+       
+
     </div>
+
+   
 
 </div>
