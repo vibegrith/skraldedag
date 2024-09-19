@@ -19,21 +19,33 @@ import Tekst3 from "../assets/images/tekst3.svg";
 ---
 <MainLayout title="Titel">
 <article class="">
-	<div class="border-white border-t lg:border-t-0">
-  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner></div>
+
+	
+
     <div class="md:grid md:grid-cols-2 border-white md:border-b md:h-screen">
-		<div class="self-center place-content-center">
-			<h1 class=" py-4 lg:text-8xl text-customColor flex object-cover place-content-center text-center">D. 15 Marts 2025</h1>
-			<h2 class="text-white text-center md:pl-10 md:pr-10 lg:text-6xl ">En dag dedikeret</h2>
-			<h5 class="text-center lg:text-6xl lg:pb-4"> til at rydde op i</h5>
-			<h2 class="text-center lg:text-6xl"> vores digitale skrald</h2> 
-		<div class="flex justify-center pt-4 border-white border-b md:border-b-0 pb-6 md:pt-10"> <Button variant="main" size="large">Deltag her</Button></div>
+		<div class="border-white border-t lg:border-t-0 col-span-2">
+  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
+   </div>
+
+	<div class="self-center place-content-center md:grid md:grid-rows-2 md:self-start md:place-content-start">
+		<div class="">
+			<h1 class=" py-4 lg:text-8xl text-customColor text-center md:mb-10 md:pt-10">D. 15 Marts 2025</h1>
+		 </div>
+		 <div class="md:self-center row-span-2 ">
+			<h2 class="text-white text-center md:pl-10 md:pr-10 lg:text-6xl">En dag dedikeret til at rydde op i vores digitale skrald</h2>
+			<div class="flex justify-center pt-4 border-white border-b md:border-b-0 pb-6 md:pt-0">
+			 <Button variant="main" size="large">Deltag her</Button>
 		</div>
+			 
+	    </div>
 
-		<section class=" border-white md:border-l">
+		
+   </div>
 
-		<div class="md: flex md:justify-stretch">
-	     <Image class="md:w-full md:h-full fade-in-bottom" src={Forside_tekst} alt="Forsideimg"/>
+		<section class="border-white md:border-l ">
+
+		<div class=" ">
+	     <Image class="fade-in-bottom" src={Forside_tekst} alt="Forsideimg"/>
         </div>
 		
 	   </section>
@@ -44,11 +56,12 @@ import Tekst3 from "../assets/images/tekst3.svg";
 <Image class="" src={Sustain} alt="Sustainable tekst"/>
 </section> -->
 
- <section id="info">
-	<Banner text="Info Info Info Info Info Info Info Info"></Banner>
- </section>
+ 
 
  <section class="md:grid md:grid-cols-2">
+	<section id="info" class="col-span-2">
+	<Banner text="Info Info Info Info Info Info Info Info"></Banner>
+ </section>
 	<div class="border-white md:border-r">
 	<div class="border-white border-b md:p-10">
 		<h2 class="md:pb-4" >Vidste du?</h2>
@@ -81,6 +94,32 @@ import Tekst3 from "../assets/images/tekst3.svg";
 			<Image src={Computer} alt="email og pære"/></div>
 		</div>
 
+		<div class=" md:grid md:grid-cols-2">
+			<div class="">
+				
+				<h2 class=" p-6 md:p-4">
+				Registrer dit bidrag
+			</h2>
+			<p class="pl-6 pr-6 md:pb-6 "><mark class="bg-transparent font-bold text-white text-2xl">Den 15. marts 2025 </mark>, er dagen hvor du kan være med til at reducere CO2-udledningen.</p></div> 
+
+			<div class=" p-6 md:p-6 md:flex md:flex-col md:self-center md:text-right">
+				<h3 class="pb-6"> Digital skraldedag i tal</h3>
+				<p class="pb-6">Indtil videre har vi opnået:</p>
+				<ul>
+				<li class="text-white text-2xl "><mark class="font-bold bg-transparent text-white text-3xl">1.184.747</mark> deltagere</li>
+				<li class="text-white text-2xl "><mark class="font-bold bg-transparent text-white text-3xl"> 14.5</mark> M GB slettet</li>
+				<li class="text-white text-2xl "><mark class="font-bold bg-transparent text-white text-3xl">3.625</mark> tons CO2 udledning forhindret om året</li> 
+				</ul>
+			</div>
+	</div>
+	<div class="grid grid-cols-2 p-6 md:p-6 gap-2 border-white border-b">
+			<Button variant="main" size="small">Deltag her!</Button>
+		<div class="flex flex-row-reverse">			
+			<Button variant="main" size="small">Del med en ven</Button></div>	
+					
+	</div>
+
+
 		 <div class="grid grid-cols-2 border-white border-b">
 			<div class=" py-2 px-2 md:p-2 md: flex md:justify-center">
 			<Image src={Kabel} alt="kabel"/></div>
@@ -94,11 +133,11 @@ import Tekst3 from "../assets/images/tekst3.svg";
 
 	
 
-	<div>
+	<div class="">
 		<h2 class=" py-2  px-2 md:pt-10 md:pl-10 md:pr-10 md:pb-4">Digital Skraldedag</h2>
 		<p class=" py-2 px-2 md:pt-0 md:pb-3 md:pl-10 md:text-xl">Digitalt skrald refererer til unødvendige eller overflødige data og filer, som fylder digitale enheder, servere og netværk. Det kan være gamle e-mails, ubrugte apps, duplikate filer, eller data, der ikke længere har værdi, men som stadig lagres.
         </p>
-		<p class="py-2 px-2 border-white border-b md:text-xl md:pl-10 pb-10"> Digitalt skrald kan bremse systemer, øge energiforbruget og bidrage til CO2-udledning fra datacentre. Reduktion af digitalt skrald handler om at rydde op og effektivisere digital opbevaring.</p>
+		<p class="py-2 px-2 border-white border-b md:text-xl md:pl-10 md:pb-16"> Digitalt skrald kan bremse systemer, øge energiforbruget og bidrage til CO2-udledning fra datacentre. Reduktion af digitalt skrald handler om at rydde op og effektivisere digital opbevaring.</p>
 		
 		 <div class="grid grid-cols-2 border-white border-b">
 			<div class="py-2 px-2 md:p-10 md: flex md: justify-center">
@@ -127,64 +166,73 @@ import Tekst3 from "../assets/images/tekst3.svg";
 	<p class="text-[var(--primary-color-100)] md:text-xl"> trillion spam emails  bliver sendt hvert år</p>
     <p class="text-[var(--primary-color-100)] md:text-xl"><b><i>Det udleder 20 millioner tons af CO2!</i></b></p></div>
 		</div>
-  
-	</div>
-	
-
- <!-- </section>
-
- <section class="md:grid md:grid-cols-2"> -->
-
-	<!-- <div class="border-white border-b md:border-r">
-			<h2 class=" p-2 md:p-4 md:text-center">
-				Registrer dit bidrag
-			</h2>
-
-			<div class=" p-2 md:p-6">
-                <p class="md:pb-6 md:text-xl">Den 15. marts 2025, er dagen hvor du kan være med til at reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
-				<ul class="flex flex-row justify-center gap-4">
-                <li class="text-white md:text-xl border-white border md:p-2">1.184.747 deltagere</li>
-                <li class="text-white md:text-xl border-white border md:p-2"> 14.5 M GB slettet</li>
-                <li class="text-white md:text-xl border-white border md:p-2 ">3.625 tons CO2 udledning forhindret - årligt</li>
-			</ul>
-		 </div>
-                
-                      <div class="grid grid-cols-2 md:p-6 pb-4">
-						<div class="flex justify-center">
-                        <Button variant="main" size="small">Del med en ven</Button></div>
-						<div class="flex justify-center">
-                        <Button variant="main" size="small">Tilføj til kalender</Button></div>
-						
-                       </div>
-		</div> -->
-
-		<div class="border-b border-r border-[var(--secondary-color-100)]">
-			<h2 class=" p-2 md:p-4">
-				Registrer dit bidrag
-			</h2>
-			<div class=" md:p-6">
-				<p class="md:pb-6">Den 15. marts 2025, er dagen hvor du kan være med til at <br> reducere CO2-udledningen. Indtil videre har vi opnået:</p> 
-				<li class="text-white">1.184.747 deltagere</li>
-				<li class="text-white"> 14.5 M GB slettet</li>
-				<li class="text-white">3.625 tons CO2 udledning forhindret - årligt</li> 
-			</div>
-				
-					  <div class="grid grid-cols-3 md:p-6 gap-1">
-						<Button variant="main" size="small">Del med en ven</Button>
-						<Button variant="main" size="small">Tilføj til kalender</Button>
-					</div>
-	
-			</div>
-	
-		</div>
+  	
 	 <div class="content-center border-white border-b px-2 py-2">
-		<div class="flex justify-center mb-10">
+		<div class="flex justify-center md:p-16">
 			<Button variant="round" size="large"><a href="/howto">Vil du være med til at rydde op?</a></Button>
 		</div>
 	</div>
+	</div>
+	
+
+ </section>
+
+
 
  </section>
 
  
 
 </MainLayout>
+
+<script>
+	import { inView } from "motion";
+
+	const inviewelement = document.querySelector(".section1");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".section2");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+		
+		const inviewelement2 = document.querySelector(".section3");
+	inView(
+		inviewelement2 , () => {
+			inviewelement2.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement3 = document.querySelector(".section4");
+	inView(
+		inviewelement3 , () => {
+			inviewelement3.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement4 = document.querySelector(".section5");
+	inView(
+		inviewelement4 , () => {
+			inviewelement4.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement5 = document.querySelector(".section6");
+	inView(
+		inviewelement5 , () => {
+			inviewelement5.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+		
+		const inviewelement6 = document.querySelector(".section7");
+	inView(
+		inviewelement6 , () => {
+			inviewelement6.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement7 = document.querySelector(".section8");
+	inView(
+		inviewelement7 , () => {
+			inviewelement7.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+</script>

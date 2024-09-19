@@ -6,6 +6,7 @@ import Banner from "../components/Banner.astro"
 import { Image } from 'astro:assets';
 import registrering from "../assets/images/registrering.svg"
 import Checkbox from "../components/Checkbox.astro";
+import InfoBox from "../components/InfoBox.astro"
 ---
 
 <MainLayout>
@@ -14,7 +15,9 @@ import Checkbox from "../components/Checkbox.astro";
 <section class="grid lg:grid-cols-5">
 
     <div class="hidden md:block lg:col-span-2 border-r border-[var(--secondary-color-100)]">
-        <Image class="hidden md:block" src={registrering} alt="billede"></Image>
+<div>
+            <Image class=" hidden md:block" src={registrering} alt="billede"></Image>
+</div>
         <div class=" grid grid-cols-2 border-t border-b border-[var(--secondary-color-100)]">
             <Button variant="primary" size="xlarge">Gem<br>datoen</Button>
             <Button variant="secondary" size="xlarge">Del<br>med<br>en ven</Button>
@@ -22,9 +25,8 @@ import Checkbox from "../components/Checkbox.astro";
     </div>
 
     <div class="lg:col-span-3 border-b border-[var(--secondary-color-100)]">
-        <div class="bg-red-600 text-cyan-200 w-6">
-           <p>?</p>
-        </div>
+    <InfoBox></InfoBox>
+       
         <form action="" class="grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
             <div class="block mb-6">
@@ -63,24 +65,27 @@ import Checkbox from "../components/Checkbox.astro";
             </div>
         
             <div class="col-span-2">
-                <div class="flex flex-row">
-                    <Checkbox></Checkbox>
-                    <p>*Jeg accepterer Let's Do It, World Terms and Conditions</p>
-                </div>
-                <div class="flex flex-row">
-                    <Checkbox></Checkbox>
-                    <p>Jeg vil gerne modtage nyheder fra Digital Skraldedag</p>
-                </div>
+              <div class="flex flex-row">
+                    <div class="flex flex-col">
+                    <div class="flex flex-row">
+                            <Checkbox></Checkbox>
+                            <p>*Jeg accepterer Let's Do It, World Terms and Conditions</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <Checkbox></Checkbox>
+                        <p>Jeg vil gerne modtage nyheder fra Digital Skraldedag</p>
+                    </div>
+                    </div>
+                    <div class="ml-auto"><Button variant="main" size="large">Indsend</Button></div>
+              </div>
             </div>
-            <div></div>
-            <Button  variant="main">Indsend</Button>
             
         
 
         </form>
         <div class="block md:hidden flex flex-row border-t border-b border-[var(--secondary-color-100)]">
-            <Button variant="primary" size="large">Gem<br>datoen</Button>
-            <Button  variant="secondary" size="large">Del<br>med<br>en ven</Button>
+            <Button variant="primary" size="xlarge">Gem<br>datoen</Button>
+            <Button  variant="secondary" size="xlarge">Del<br>med<br>en ven</Button>
         </div>
 
     </div>
