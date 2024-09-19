@@ -11,7 +11,7 @@ import Banner from "./Banner.astro"
           <a href="/" class="block py-6 px-4 border-l  border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">FORSIDE</a>
         </li>
         <li class="relative flex-1 text-center">
-          <a href="#info" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">INFO</a>
+          <a href="/#info" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">INFO</a>
         </li>
         <li class="relative flex-1 text-center">
           <a href="/howto" class="block py-6 px-4 border-r border-[var(--secondary-color-100)] transition-all	 hover:line-through">HOW TO</a>
@@ -33,11 +33,11 @@ import Banner from "./Banner.astro"
 <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
 <ul class="text-[var(--secondary-color-100)]" >
-<li class="text-center py-2 border-y-2 background">FORSIDE</li>
-<li class="text-center py-2 border-b-2 background">INFO</li>
-<li class="text-center py-2 border-b-2 background">HOW TO</li>
-<li class="text-center py-2 border-b-2 background">RESSOURCER</li>
-<li class="text-center py-2 border-b-2 background">REGISTRERING</li>
+  <a href="/"><li class="text-center py-2 border-y-2 background">FORSIDE</li></a>
+  <a href="/#info"><li class="text-center py-2 border-b-2 background">INFO</li></a>
+  <a href="/howto"><li class="text-center py-2 border-b-2 background">HOW TO</li></a>
+  <a href="/resourcer"><li class="text-center py-2 border-b-2 background">RESSOURCER</li></a>
+  <a href="/registrering"><li class="text-center py-2 border-b-2 background">REGISTRERING</li></a>
 </ul>
 </nav>
 </div>
