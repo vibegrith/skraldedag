@@ -127,6 +127,13 @@ p {
   font-style: normal;
   color: var(--secondary-color-100);
 }
+mark {
+  font-size: 1.2rem;
+  font-family: "indivisible", sans-serif;
+  font-weight: 100;
+  font-style: italics;
+  color: var(--secondary-color-100);
+}
 
 li {
   font-size: 1.3rem;
