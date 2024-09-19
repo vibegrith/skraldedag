@@ -9,15 +9,30 @@ import Banner from "../components/Banner.astro"
 	
 <Banner text="RESOURCER RESOURCER RESOURCER"></Banner>
 
-<div class="border-solid border-1 border-b border-[var(--secondary-color-100)]">
+<div class="border-solid border-1 border-b border-[var(--secondary-color-100)] section1">
    <div class="m-8">
         <h2 class="text-center">Tryk og få</h2>
         <h5 class="text-center">mere viden</h5>
    </div>
 </div>
 
-<CardSlider></CardSlider>
-
-
+<div class="section2"><CardSlider></CardSlider></div>
 
 </MainLayout> 
+
+<script>
+	import { inView } from "motion";
+
+	const inviewelement = document.querySelector(".section1");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".section2");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+		
+</script>
