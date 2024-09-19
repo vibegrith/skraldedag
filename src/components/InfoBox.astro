@@ -1,0 +1,61 @@
+---
+// Brug 'client:load' for at aktivere JavaScript på klient-siden.
+---
+<script client:load>
+  function toggleInfo() {
+    const infoBox = document.getElementById("info-box");
+    if (infoBox.style.display === "none" || infoBox.style.display === "") {
+      infoBox.style.display = "block";
+    } else {
+      infoBox.style.display = "none";
+    }
+  }
+</script>
+
+<style>
+  .info-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .question-mark {
+    background-color: var(--accent-color-100);
+    color: var(--secondary-color-100);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .info-box {
+    display: none;
+    background-color: var(--secondary-color-100) ;
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 47px;
+    left: 0;
+  }
+
+  .info-box p {
+    color: var(--primary-color-100);
+    margin: 20px
+  }
+
+  .info-box h3 {
+    color: var(--accent-color-100);
+    margin: 20px
+  }
+
+</style>
+
+<div class="info-container">
+  <span class="question-mark" onClick="toggleInfo()">?</span>
+  <div id="info-box" class="info-box">
+    <h3>Sådan finder du ud af hvor mange GB du har slettet</h3>
+    <p>Inden du begynde oprydningsarbejdet, skal du tjekke dit forbrug af GB på din digitale enhed. Det gør du ved at gå ind på indstillinger, gå under generelt og så ind på lagringsplads. Skriv dit tal ned og lad oprydningen begynde!
+      Efter dit hårde arbejde, kan du samme sted tjekke hvor meget du nu har - ved at trække dit nye tal fra det gamle, har du dit endelige resultat og tallet til indsending i formularen herunder!
+    </p>
+  </div>
+</div>
