@@ -20,14 +20,14 @@ import Tekst3 from "../assets/images/tekst3.svg";
 <MainLayout title="Titel">
 <article class="">
 
-	
+	<div class="md:h-screen">
+	<div class="border-white border-t lg:border-t-0 col-span-2">
+<Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
+</div>
 
-    <div class="md:grid md:grid-cols-2 border-white md:border-b md:h-screen">
-		<div class="border-white border-t lg:border-t-0 col-span-2">
-  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
-   </div>
+    <div class="md:grid md:grid-cols-2 border-white md:border-b">
 
-	<div class="self-center place-content-center md:grid md:grid-rows-2 md:self-start md:place-content-start">
+	<div class="place-self-auto self-center place-content-center md:place-content-start">
 		<div class="">
 			<h1 class=" py-4 lg:text-8xl text-customColor text-center md:mb-8 md:pt-10">D. 15 Marts 2025</h1>
 		 </div>
@@ -42,14 +42,10 @@ import Tekst3 from "../assets/images/tekst3.svg";
 		
    </div>
 
-		<section class="border-white md:border-l ">
-
-		<div class=" ">
-	     <Image class="fade-in-bottom" src={Forside_tekst} alt="Forsideimg"/>
-        </div>
-		
-	   </section>
-
+   <Image class="fade-in-bottom md:w-full md:object-left md:h-full md:object-cover" src={Forside_tekst} alt="Forsideimg"/>
+		<!-- <section class="border-white md:border-l ">
+	   </section> -->
+</div>
  </article>
 
  <!-- <section class="">
@@ -59,7 +55,7 @@ import Tekst3 from "../assets/images/tekst3.svg";
  
 
  <section class="md:grid md:grid-cols-2 ">
-	<section id="info" class="col-span-2 section1">
+	<section id="info" class="col-span-2 section1 border border-t border-white">
 	<Banner text="Info Info Info Info Info Info Info Info"></Banner>
  </section>
 	<div class="border-white md:border-r section2">
