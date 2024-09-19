@@ -10,11 +10,10 @@ import InfoBox from "../components/InfoBox.astro"
 ---
 
 <MainLayout>
-<Banner text="REGISTRERING REGISTRERING REGISTRERING"></Banner>
+<Banner text="Deltag Deltag Deltag"></Banner>
 
 <section class="grid lg:grid-cols-5">
-
-    <div class="hidden md:block lg:col-span-2 border-r border-[var(--secondary-color-100)]">
+    <div class="section1 hidden md:block lg:col-span-2 border-r border-[var(--secondary-color-100)]">
 <div>
             <Image class=" hidden md:block" src={registrering} alt="billede"></Image>
 </div>
@@ -24,8 +23,11 @@ import InfoBox from "../components/InfoBox.astro"
         </div>
     </div>
 
-    <div class="lg:col-span-3 border-b border-[var(--secondary-color-100)]">
-    <InfoBox></InfoBox>
+    <div class="section2 lg:col-span-3 border-b border-[var(--secondary-color-100)]">
+  <div class="flex flex-row items-center gap-4">
+        <InfoBox></InfoBox>
+        <h1 class=" py-4 lg:text-8xl text-[var(--accent-color-300) text-center md:mb-10 md:pt-10">D. 15 Marts 2025</h1>
+  </div>
        
         <form action="" class="grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
@@ -80,10 +82,8 @@ import InfoBox from "../components/InfoBox.astro"
               </div>
             </div>
             
-        
-
         </form>
-        <div class="block md:hidden flex flex-row border-t border-b border-[var(--secondary-color-100)]">
+        <div class="section3 block md:hidden flex flex-row border-t border-b border-[var(--secondary-color-100)]">
             <Button variant="primary" size="xlarge">Gem<br>datoen</Button>
             <Button  variant="secondary" size="xlarge">Del<br>med<br>en ven</Button>
         </div>
@@ -91,8 +91,6 @@ import InfoBox from "../components/InfoBox.astro"
     </div>
 
 </section>
-
-
 </MainLayout>
 
 <style>
@@ -101,3 +99,25 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="n
 }
 
 </style>
+
+<script>
+	import { inView } from "motion";
+
+	const inviewelement = document.querySelector(".section1");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".section2");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+		
+		const inviewelement2 = document.querySelector(".section3");
+	inView(
+		inviewelement2 , () => {
+			inviewelement2.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+</script>
