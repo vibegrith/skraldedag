@@ -4,36 +4,31 @@ import Button from '../components/Button.astro';
 import { Image } from 'astro:assets';
 import Bitcoin from "../assets/images/Bitcoin.svg";
 import Banner from "../components/Banner.astro";
-import Sustain from "../assets/images/ascii-art(5).png";
 import Email from "../assets/images/e-mail.svg";
 import Computer from "../assets/images/computer_info.svg";
 import Kabel from "../assets/images/cabel_info.svg";
 import Dino from "../assets/images/Dino.svg";
 import Spam from "../assets/images/spam_info.svg";
 import Forside_tekst from "../assets/images/forside_tekst.svg";
-import Mellem from "../assets/images/mellem_hand.svg";
-import Small from "../assets/images/Small_hand.svg";
-import Tekst1 from "../assets/images/tekst1.svg";
-import Tekst2 from "../assets/images/tekst2.svg";
-import Tekst3 from "../assets/images/tekst3.svg";
+
 ---
 <MainLayout title="Titel">
 <article class="">
 
-	
+	<div class="md:h-screen">
+	<div class="border-white border-t lg:border-t-0 col-span-2">
+<Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
+</div>
 
-    <div class="md:grid md:grid-cols-2 border-white md:border-b md:h-screen">
-		<div class="border-white border-t lg:border-t-0 col-span-2">
-  <Banner text="Digital Skraldedag Digital Skraldedag"></Banner>
-   </div>
+    <div class="md:grid md:grid-cols-2 border-white md:border-b">
 
-	<div class="self-center place-content-center md:grid md:grid-rows-2 md:self-start md:place-content-start">
+	<div class="place-self-auto self-center place-content-center md:place-content-start ">
 		<div class="">
-			<h1 class=" py-4 lg:text-8xl text-customColor text-center md:mb-10 md:pt-10">D. 15 Marts 2025</h1>
+			<h1 class=" py-4 lg:text-8xl text-customColor text-center md:mb-8">D. 15 Marts 2025</h1>
 		 </div>
 		 <div class="md:self-center row-span-2 ">
-			<h2 class="text-white text-center md:pl-10 md:pr-10 lg:text-6xl">En dag dedikeret til at rydde op i vores digitale skrald</h2>
-			<div class="flex justify-center pt-4 border-white border-b md:border-b-0 pb-6 md:pt-0">
+			<h2 class="text-white text-center md:pl-10 md:pr-10 lg:text-6xl">En dag dedikeret <h5 class="text-center">til at rydde op</h5> <h2 class="text-center">i vores digitale skrald</h2>
+			<div class="flex justify-center pt-4 border-white border-b md:border-b-0 pb-6 md:pt-10">
 			 <Button variant="main" size="large">Deltag her</Button>
 		</div>
 			 
@@ -41,34 +36,24 @@ import Tekst3 from "../assets/images/tekst3.svg";
 
 		
    </div>
-
-		<section class="border-white md:border-l ">
-
-		<div class=" ">
-	     <Image class="fade-in-bottom" src={Forside_tekst} alt="Forsideimg"/>
-        </div>
+<div class="border-white md:border-l">
+   <Image class="fade-in-bottom md:w-full md:object-left md:h-full md:object-cover" src={Forside_tekst} alt="Forsideimg"/>
 		
-	   </section>
-
+</div>
+	</div>
  </article>
 
- <!-- <section class="">
-<Image class="" src={Sustain} alt="Sustainable tekst"/>
-</section> -->
-
- 
-
- <section class="md:grid md:grid-cols-2">
-	<section id="info" class="col-span-2">
+ <section class="md:grid md:grid-cols-2 ">
+	<section id="info" class="col-span-2 section1 border border-t border-white">
 	<Banner text="Info Info Info Info Info Info Info Info"></Banner>
  </section>
-	<div class="border-white md:border-r">
-	<div class="border-white border-b md:p-10">
+	<div class="border-white md:border-r section2">
+	<div class=" p-2 border-white border-b md:p-10">
 		<h2 class="md:pb-4" >Vidste du?</h2>
-		<p class="md:text-xl md:pb-3">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.</p>
-		<p class="md:text-xl">Nu på sit femte år og arrangeret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre <mark class="bg-transparent font-bold text-[var(--secondary-color-100)] text-2xl">både enkeltpersoner og virksomheder</mark> til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+		<p class="pb-4 md:text-xl md:pb-3">Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.</p>
+		<p class="pb-4 md:text-xl">Nu på sit femte år og arrangeret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre <mark class="bg-transparent font-bold text-[var(--secondary-color-100)] text-2xl">både enkeltpersoner og virksomheder</mark> til at rydde op og omstrukturere deres online tilstedeværelse.</p>
 </div>
-        <div class="grid grid-cols-2 border-white border-b">
+        <div class="grid grid-cols-2 border-white border-b section3">
 			<div class="px-2 flex md: justify-center">
 			<Image src={Email} alt="email og pære"/></div>
 			<div class="bg-[var(--secondray-color-300)] py-2 pr-2 md:pt-4 md:pb-6 md:pr-6">
@@ -78,7 +63,7 @@ import Tekst3 from "../assets/images/tekst3.svg";
 		</div>
 		</div>
 
-		<div class="grid grid-cols-2 border-white border-b">
+		<div class="grid grid-cols-2 border-white border-b section4">
 			<div class="bg-[var(--accent-color-100)]">
 			<div class="md:p-6 pl-2 py-2">
 			<p class="md:text-xl">I 2022, blev ca. <b><i>70 millioner</i></b> servere brugt til at lagre data.</p>
@@ -90,19 +75,19 @@ import Tekst3 from "../assets/images/tekst3.svg";
 		    </div>
 	    </div>
 			
-		<div class="flex justify-center px-2 md:py-2">
+		<div class="flex justify-center px-2 md:py-6">
 			<Image src={Computer} alt="email og pære"/></div>
 		</div>
 
-		<div class=" md:grid md:grid-cols-2">
+		<div class=" md:grid md:grid-cols-2 section5">
 			<div class="">
 				
-				<h2 class=" p-6 md:p-4">
+				<h2 class=" p-2 md:p-4">
 				Registrer dit bidrag
 			</h2>
-			<p class="pl-6 pr-6 md:pb-6 "><mark class="bg-transparent font-bold text-white text-2xl">Den 15. marts 2025 </mark>, er dagen hvor du kan være med til at reducere CO2-udledningen.</p></div> 
+			<p class="pl-2 pr-2 md:pb-4 "><mark class="bg-transparent font-bold text-white text-2xl">Den 15. marts 2025 </mark>, er dagen hvor du kan være med til at reducere CO2-udledningen.</p></div> 
 
-			<div class=" p-6 md:p-6 md:flex md:flex-col md:self-center md:text-right">
+			<div class=" p-2 md:p-6 md:flex md:flex-col md:self-center md:text-right">
 				<h3 class="pb-6"> Digital skraldedag i tal</h3>
 				<p class="pb-6">Indtil videre har vi opnået:</p>
 				<ul>
@@ -112,7 +97,7 @@ import Tekst3 from "../assets/images/tekst3.svg";
 				</ul>
 			</div>
 	</div>
-	<div class="grid grid-cols-2 p-6 md:p-6 gap-2 border-white border-b">
+	<div class="grid grid-cols-2 p-6 md:p-6 gap-2 border-white border-b section6">
 			<Button variant="main" size="small">Deltag her!</Button>
 		<div class="flex flex-row-reverse">			
 			<Button variant="main" size="small">Del med en ven</Button></div>	
@@ -120,8 +105,8 @@ import Tekst3 from "../assets/images/tekst3.svg";
 	</div>
 
 
-		 <div class="grid grid-cols-2 border-white border-b">
-			<div class=" py-2 px-2 md:p-2 md: flex md:justify-center">
+		 <div class="grid grid-cols-2 border-white border-b section7">
+			<div class=" py-2 px-2 md:p-2 md: flex md:justify-center md:w-4/5">
 			<Image src={Kabel} alt="kabel"/></div>
 			<div class="bg-[var(--secondary-color-200)] text-right content-center px-2 md:pr-6">
 			<p class="text-[var(--primary-color-300)] md:text-xl">Internettet producerer mere end </p>
@@ -134,20 +119,22 @@ import Tekst3 from "../assets/images/tekst3.svg";
 	
 
 	<div class="">
+		<div class="section8">
 		<h2 class=" py-2  px-2 md:pt-10 md:pl-10 md:pr-10 md:pb-4">Digital Skraldedag</h2>
 		<p class=" py-2 px-2 md:pt-0 md:pb-3 md:pl-10 md:text-xl">Digitalt skrald refererer til unødvendige eller overflødige data og filer, som fylder digitale enheder, servere og netværk. Det kan være gamle e-mails, ubrugte apps, duplikate filer, eller data, der ikke længere har værdi, men som stadig lagres.
         </p>
-		<p class="py-2 px-2 border-white border-b md:text-xl md:pl-10 md:pb-16"> Digitalt skrald kan bremse systemer, øge energiforbruget og bidrage til CO2-udledning fra datacentre. Reduktion af digitalt skrald handler om at rydde op og effektivisere digital opbevaring.</p>
-		
-		 <div class="grid grid-cols-2 border-white border-b">
-			<div class="py-2 px-2 md:p-10 md: flex md: justify-center">
+		<p class="py-2 px-2 border-white border-b md:text-xl md:pl-10 md:pb-14"> Digitalt skrald kan bremse systemer, øge energiforbruget og bidrage til CO2-udledning fra datacentre. Reduktion af digitalt skrald handler om at rydde op og effektivisere digital opbevaring.</p>
+		</div>
+
+		 <div class="grid grid-cols-2 border-white border-b section9">
+			<div class="py-2 px-2 md:p-6 md: flex md: justify-center">
 			<Image src={Dino} alt="email og pære"/></div>
 			<div class="bg-[var(--accent-color-100)] text-right md:p-6">
 				<h1 class="text-white px-2">91%</h1>
 			<p class="px-2 md:text-xl">af internetsider får <b><i>ingen trafik</i></b> fra google</p></div>
 		</div>
 
-		<div class="grid grid-cols-2 border-white border-b">
+		<div class="grid grid-cols-2 border-white border-b section10">
 			<div class=" bg-[var(--primary-color-500)] md:p-6 content-center">
 			<p class="text-[var(--accent-color-300)] px-2 md:text-xl"><b>Det kræver mere energi at “mine” efter BitCoin, end hele New Zealand udleder på</b></p>
 		<h1 class="text-[var(--accent-color-100)] px-2">1 år</h1> </div>
@@ -155,7 +142,7 @@ import Tekst3 from "../assets/images/tekst3.svg";
 			<Image src={Bitcoin} alt="email og pære"/></div>
 		</div>
 
-		<div class="grid grid-cols-2 border-white border-b">
+		<div class="grid grid-cols-2 border-white border-b section11">
 			<div class="py-2 px-2 md:p-6 md: flex md: justify-center">
 			<Image src={Spam} alt="email og pære"/></div>
 			<div class="bg-[var(--secondray-color-300)] content-center text-right pb-2 pr-2 md:pr-6">
@@ -167,9 +154,9 @@ import Tekst3 from "../assets/images/tekst3.svg";
     <p class="text-[var(--primary-color-100)] md:text-xl"><b><i>Det udleder 20 millioner tons af CO2!</i></b></p></div>
 		</div>
   	
-	 <div class="content-center border-white border-b px-2 py-2">
-		<div class="flex justify-center md:p-16">
-			<Button variant="round" size="large"><a href="/howto">Vil du være med til at rydde op?</a></Button>
+	 <div class="content-center border-white border-b px-2 py-2 section12">
+		<div class="flex justify-center md:p-11">
+			<Button class="" variant="round" size="large"><a href="/howto">Vil du være med til at rydde op? <br>klik her!</a></Button>
 		</div>
 	</div>
 	</div>
@@ -191,7 +178,7 @@ import Tekst3 from "../assets/images/tekst3.svg";
 	const inviewelement = document.querySelector(".section1");
 	inView(
 		inviewelement , () => {
-			inviewelement.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+			inviewelement.classList.add("animate__animated","animate__fadeInRight", "animate__delay-1s")
 		})
 
 		const inviewelement1 = document.querySelector(".section2");
@@ -235,4 +222,31 @@ import Tekst3 from "../assets/images/tekst3.svg";
 		inviewelement7 , () => {
 			inviewelement7.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
 		})
+
+
+         const inviewelement8 = document.querySelector(".section9");
+			inView(
+		inviewelement8 , () => {
+			inviewelement8.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		
+         const inviewelement9 = document.querySelector(".section10");
+			inView(
+		inviewelement9 , () => {
+			inviewelement9.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		     const inviewelement10 = document.querySelector(".section11");
+			inView(
+		inviewelement10 , () => {
+			inviewelement10.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		     const inviewelement11 = document.querySelector(".section12");
+			inView(
+		inviewelement11 , () => {
+			inviewelement11.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
 </script>
