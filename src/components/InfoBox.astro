@@ -1,4 +1,52 @@
 ---
-
+function toggleInfo() {
+  var infoBox = document.getElementById("info-box");
+  if (infoBox.style.display === "none" || infoBox.style.display === "") {
+    infoBox.style.display = "block";
+  } else {
+    infoBox.style.display = "none";
+  }
+}
 ---
+
+
+  <div class="info-container">
+    <span class="question-mark" onclick="toggleInfo()">?</span>
+    <div id="info-box" class="info-box">
+      Her er nogle vigtige oplysninger.
+    </div>
+  </div>
+
+<style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.info-container {
+  position: relative;
+  display: inline-block;
+}
+
+.question-mark {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.info-box {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+</style>
 

@@ -6,6 +6,7 @@ import Banner from "../components/Banner.astro"
 import { Image } from 'astro:assets';
 import registrering from "../assets/images/registrering.svg"
 import Checkbox from "../components/Checkbox.astro";
+import InfoBox from "../components/InfoBox.astro"
 ---
 
 <MainLayout>
@@ -22,9 +23,7 @@ import Checkbox from "../components/Checkbox.astro";
     </div>
 
     <div class="lg:col-span-3 border-b border-[var(--secondary-color-100)]">
-        <div class="bg-red-600 text-cyan-200 w-6">
-           <p>?</p>
-        </div>
+       <InfoBox></InfoBox>
         <form action="" class="grid grid-cols-2 sm:max-w-full gap-6 m-8">
 
             <div class="block mb-6">
