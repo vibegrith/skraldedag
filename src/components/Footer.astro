@@ -1,5 +1,14 @@
 ---
 import Link from '../components/Link.astro'
+import { Image } from 'astro:assets';
+import logo from "../assets/images/logo_4.svg"
+import x from "../assets/images/x.svg";
+import tiktok from "../assets/images/tiktok.svg";
+import youtube from "../assets/images/youtube.svg";
+import linkedin from "../assets/images/in_2.svg";
+import facebook from "../assets/images/facebook.svg";
+import instagram from "../assets/images/insta.svg";
+
 ---
 
 <div class="py-8 max-w-screen-xl mx-auto text-[var(--secondary-color-100)]" >
@@ -8,7 +17,8 @@ import Link from '../components/Link.astro'
        
         <section class="hidden md:block"> <link rel="stylesheet" href="">
           <a href="/" target="_blank">
-            <img src="src/assets/images/logo_4.svg" alt="TikTok" class="w-[200px] h-[156px] ml-[-20px]">
+            <Image class="w-[200px] h-[156px] ml-[-20px]" src={logo} alt="logo"/>
+           
         </a>
         </section>
 
@@ -33,30 +43,30 @@ import Link from '../components/Link.astro'
 
              <section class="ml-20 md:ml-0">
                         <div class="  gap-5 md:grid grid-cols-6 justify-items-center pb-8"> 
-                        
-
+                            
                             <a href="https://x.com/i/flow/login?redirect_after_login=%2Fletsdoitworld" target="_blank">
-                                <img src="src/assets/images/x.svg" alt="x" class="w-8 h-8 my-2">
+                                <Image class="w-8 h-8 my-2" src={x} alt="x"/>
+                            
                             </a>
                             
                             <a href="https://www.tiktok.com/@worldcleanupday.global" target="_blank">
-                                <img src="src/assets/images/tiktok.svg" alt="TikTok" class="w-8 h-8 my-2">
+                                <Image class="w-8 h-8 my-2" src={tiktok} alt="tiktok"/>
                             </a>
                             
                             <a href="https://www.youtube.com/worldcleanupday" target="_blank">
-                                <img src="src/assets/images/youtube.svg" alt="YouTube" class="w-8 h-8 my-2">
+                                <Image class="w-8 h-8 my-2" src={youtube} alt="youtube"/>
                             </a>
                             
                             <a href="https://www.linkedin.com/company/world-cleanup-day-official/" target="_blank">
-                                <img src="src/assets/images/in_2.svg" alt="LinkedIn" class="w-8 h-8 my-2">
+                                <Image class="w-8 h-8 my-2" src={linkedin} alt="linkedin"/>
                             </a>
                             
                             <a href="https://www.facebook.com/worldcleanupday.global" target="_blank">
-                                <img src="src/assets/images/facebook.svg" alt="Facebook" class="w-8 h-8 my-2">
+                                <Image class="w-8 h-8 my-2" src={facebook} alt="facebook"/>
                             </a>
 
                             <a href="https://www.instagram.com/worldcleanupday.global" target="_blank">
-                                <img src="src/assets/images/insta.svg" alt="Facebook" class="w-8 h-8 my-3 ">
+                                <Image class="w-8 h-8 my-2" src={instagram} alt="instagram"/>
                             </a>
             </div>
        
